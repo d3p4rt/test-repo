@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                /usr/local/bin/kubectl get nodes
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                /usr/local/bin/kubectl get namespaces
             }
         }
         stage('Deploy') {
